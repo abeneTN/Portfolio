@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Cairo', sans-serif;
+    background-image: url('../assets/images/back.svg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+main {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction {
+    background-color: rgba(87, 232, 74, 0.8);
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(229, 229, 229, 0.2);
+}
+
+.widget > img {
+    height: 300px;
+    width: 300px;
+}
+
+.description {
+    padding-left: 20px;
+    padding-right: 20px;
+} 
+
+.description > h1 {
+    color: #E8524A;
+    font-size: 40px;
+}
+
+@media (max-width: 900px) {
+    .widget {
+        flex-direction: column;
+    }
+    .description > h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,36 @@
+header {
+    text-align: center;
+    background-image: url('images/background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr;
+    justify-items: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    background-attachment: fixed;
+}
+
+@media (max-width: 500px) {
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 0.7fr;
+    }
+}
+
+header > h1 {
+    padding: 30px auto;
+    font-size: 5vw;
+}
+
+header > img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 150px;
+    width: 150px;
+}

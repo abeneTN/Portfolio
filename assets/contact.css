@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&family=Press+Start+2P&family=Raleway:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    background-image: url('images/back.svg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+*:focus {
+    outline: none;
+}
+
+.contact {
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    color: #000;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.notice {
+    background-color: rgba(87, 232, 74, 0.8);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+    .notice {
+        font-size: 3vw;
+    }
+}
+
+form {
+    text-align: Left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+label {
+    margin: 20px 10px;
+}
+input {
+    margin: 20px 0;
+    font-size: 23px;
+    padding: 8px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: grey;
+    color: #000;
+}
+input:focus {
+    border-color: #e8524a;
+    border-width: 0 0 2px 0;
+}
+textarea {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: grey;
+    font-size: 23px;
+}
+textarea:focus {
+    border-color: #e8524a;
+    border-width: 0 0 2px 0;
+}
+
+.send {
+    background-color: #e8524a;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.send:hover {
+    background-color: #c73d35;
+}
+
+.send:focus {
+    background-color: #c73d35;
+}
+

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    color: white;
+    animation-name: background;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    overflow-x: hidden;
+}
+
+/* @keyframes background {
+    0% {
+        background: linear-gradient(108.51deg, #161220 0.36%, #351F4E 94.89%);    
+    }
+    100% {
+        background: linear-gradient(0deg, #161220 0.36%, #351F4E 94.89%);    
+    }
+    
+} */
+
+.landing_page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('images/background.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+@media (max-width:700px) {
+    .landing_page {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .welcome > img {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+.welcome {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+}
+
+.welcome > h1 {
+    font-weight: 600;
+    font-size: 48px
+}
+
+.welcome > h2 {
+    font-weight: 600;
+    color: #E8524A;
+}
+
+.menu {
+    font-family: 'Press Start 2P', cursive;
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+menu {
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 500px;
+}
+
+li {
+    margin: 20px auto;
+}
+
+.menuButtons {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #E8524A;
+    padding: 20px;
+    text-align: center;
+}
+
+.menuButtons:hover {
+    background-color: #c73d35;
+    text-decoration: underline;
+}
+
+.menuTitle {
+    font-size: 5vw;
+    padding-bottom: 30px;
+}
+
+.contact {
+    position: absolute;
+    top: 130px;
+    left: 15%;
+    width: 70%;
+    background: linear-gradient(108.51deg, #161220 0.36%, #351F4E 94.89%); 
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    border-radius: 5px;
+    padding-top: 50px;
+    display: none;
+}
+form {
+    margin: auto;
+    width: 80%;
+    text-align: Left;
+    display: grid;
+}
+label {
+    margin: 20px 10px;
+}
+input {
+    margin: 20px 0;
+    font-size: 23px;
+    padding: 8px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: grey;
+    color: white;
+}
+input:focus {
+    border-color: #E8524A;
+    border-width: 0 0 2px 0;
+}
+textarea {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: grey;
+}
+textarea:focus {
+    border-color: #E8524A;
+    border-width: 0 0 2px 0;
+}
+
+.send_button {
+    background-color: #E8524A;
+    width: 5vw;
+}
+
+@media (max-width: 1100px) {
+    .menuTitle {
+        font-size: 10vw;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width:700px) {
+    .landing_page {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .logo {
+        height: 120px;
+        width: 120px;
+    }
+    .menuTitle {
+        font-size: 5vw;
+        padding-bottom: 30px;
+    }
+    .contact {
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .welcome > h2 {
+        margin: 5px auto;
+    }
+    .welcome > h1 {
+        margin: 10px auto;
+    }
+}
+
+#good {
+    text-decoration: underline;
+    animation-name: good;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes good {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #E8524A;
+    }
+    100% {
+        color: white;
+    }
+}

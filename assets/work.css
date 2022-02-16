@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&family=Press+Start+2P&family=Raleway:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Cairo', sans-serif;
+    background-image: url('images/back.svg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+main {
+    display: grid;
+}
+
+.arrow {
+    height: auto;
+    width: auto;
+}
+
+main > h1 {
+    font-size: 5vw;
+    margin-left: 5vw;
+    color: #E8524A;
+    font-weight: 600;
+    background-image: url('images/work/arrow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 10vw;
+}
+
+.workName {
+    background-color: #ffe70b;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-top: -50px;
+}
+
+.workName:hover {
+    background-color: #e9d208;
+}
+
+.widgets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.socialmedia {
+    margin-bottom: 50px;
+}
+
+.widget {
+    height: 600px;
+    width: 400px;
+    margin-top: 50px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.widget_animation:hover {
+    animation-name: scroll;
+    animation-duration: 6s;
+}
+
+@keyframes scroll {
+    0% {
+        background-position: top;
+    }
+    50% {
+        background-position: bottom;
+    }
+    100% {
+        background-position: top;
+    }
+}
+
+@media (max-width: 900px) {
+    .widgets {
+        grid-template-columns: 1fr 1fr;
+    }
+    .widget {
+        height: 500px;
+        width: 300px;
+    }
+    header > menu {
+        display: none;
+    }
+    header {
+        grid-template-rows: 1fr;
+    }
+    .arrow {
+        height: 3vh;
+        width: 3vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .widgets {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    .widget {
+        height: 500px;
+        width: 300px;
+    }
+    main > h1 {
+        font-size: 5vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.widget1 {
+    background-image: url('images/work/baiafood.jpg');
+    background-size: cover;
+}
+
+.widget2 {
+    background-image: url('images/work/greensportsteam.jpg');
+    background-size: cover;
+}
+
+.widget3 {
+    background-image: url('images/work/vacationrental.jpg');
+    background-size: cover;
+}
+
+.widget4 {
+    background-image: url('images/work/labrioche.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.widget5 {
+    background-image: url('images/work/solidesportmegrine.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.widget6 {
+    background-image: url('images/work/more.svg');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

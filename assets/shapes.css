@@ -1,0 +1,72 @@
+.plus {
+    --b:6px; /* the thickness */
+    width:20px; /* the size */
+    aspect-ratio:1/1;
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),rgba(206, 156, 156, 0) 90deg,#fff 0) 
+      calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+      calc(50%  + var(--b))   calc(50%  + var(--b));
+    display:inline-block;
+    position:absolute;
+    top: 20px;
+    animation-name: plus1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 3;
+  }
+
+@keyframes plus1 {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100vw;
+    }
+}
+.plus2 {
+    --b:6px; /* the thickness */
+    width:20px; /* the size */
+    aspect-ratio:1/1;
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),rgba(206, 156, 156, 0) 90deg,#fff 0) 
+      calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+      calc(50%  + var(--b))   calc(50%  + var(--b));
+    display:inline-block;
+    position:absolute;
+    top: 300px;
+    animation-name: plus1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  .plus3 {
+    --b:6px; /* the thickness */
+    width:20px; /* the size */
+    aspect-ratio:1/1;
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),rgba(206, 156, 156, 0) 90deg,#fff 0) 
+      calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+      calc(50%  + var(--b))   calc(50%  + var(--b));
+    display:inline-block;
+    position:absolute;
+    top: 500px;
+    animation-name: plus1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+
+  .plus4 {
+    --b:6px; /* the thickness */
+    width:20px; /* the size */
+    aspect-ratio:1/1;
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),rgba(206, 156, 156, 0) 90deg,#fff 0) 
+      calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+      calc(50%  + var(--b))   calc(50%  + var(--b));
+    display:inline-block;
+    position:absolute;
+    top: 650px;
+    animation-name: plus1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }

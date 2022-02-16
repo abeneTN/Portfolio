@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&family=Press+Start+2P&family=Raleway:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <title>Abene Sebei says Thank you!</title>
+    </head>
+    <body>
+        <style>
+            body {
+                margin: 0;
+                color: white;
+                animation-name: background;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                overflow-x: hidden;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                min-height: 100vh;
+                background-image: url("assets/images/background.svg");
+                background-position: center center;
+                font-family: "Press Start 2P", cursive;
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+                width: 100% !important;
+            }
+            h1 {
+                font-size: 5vw;
+                margin-bottom: 0;
+            }
+            h3 {
+                font-family: Raleway;
+            }
+            a {
+                text-decoration: none;
+                color: #e8524a;
+                font-size: 20px;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: #c73d35;
+            }
+            #good {
+                text-decoration: underline;
+                animation-name: good;
+                animation-iteration-count: infinite;
+                animation-duration: 1s;
+                animation-delay: 1s;
+            }
+            @keyframes good {
+                0% {
+                    color: white;
+                }
+                50% {
+                    color: #e8524a;
+                }
+                100% {
+                    color: white;
+                }
+            }
+        </style>
+        <main class="container">
+            <h1>Thank you!</h1>
+            <h3>I will return to you <span id="good">shortly</span>.</h3>
+            <a href="/">Home</a>
+        </main>
+    </body>
+</html>

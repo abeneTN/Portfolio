@@ -1,0 +1,62 @@
+footer {
+    display: grid;
+    grid-template-areas: 
+    'logo socialmedia'
+    'copyright copyright';
+    background-color: #222;
+    background-image: url('images/back.svg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (max-width: 900px) {
+    footer {
+        grid-template-areas: 
+        'logo'
+        'socialmedia'
+        'copyright';
+    }
+}
+
+.me {
+    grid-area: logo;
+}
+
+.me > img {
+    height: 150px;
+    width: 150px;
+}
+
+.sociallinks {
+    grid-area: socialmedia;
+}
+
+footer > p {
+    grid-area: copyright;
+}
+
+.sociallinks > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sociallinks a {
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.sociallinks a:hover {
+    color: #E8524A;
+}
+
+.sociallinks a > img {
+    margin-right: 10px;
+}

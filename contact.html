@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abene Sebei - Contact</title>
+    <link rel="stylesheet" href="assets/contact.css">
+    <link rel="icon" href="assets/images/logo_white.png">
+    <link rel="stylesheet" href="assets/header.css">
+    <link rel="stylesheet" href="assets/shapes.css" />
+    <link rel="stylesheet" href="assets/menu.css">
+    <link rel="stylesheet" href="assets/footer.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/index.js"></script>
+</head>
+<body>
+    <main class="contact">
+        <header>
+            <button class="menu_mobile"></button>
+            <menu id="menu">
+                <h1>Menu</h1>
+                <a href="index.html">Home</a>
+                <a href="work/index.html">Work</a>
+                <a href="aboutme.html">About me</a>
+            </menu>
+            <img src="assets/images/logo_white.png" alt="Abene Sebei" />
+            <h1>Contact me</h1>
+            <div style="position: absolute; width: 100%; height:100%; overflow: hidden">
+                <div class="plus"></div>
+                <div class="plus2"></div>
+            </div>
+        </header>
+        <div class="container">
+            <p class="notice">Please fill this form (all fields are required)</p>
+
+            <form action="contact.php" method="post">
+                <label for="name">
+                    Full name :
+                </label> <br>
+                <input name="name" type="text" id="name" required> <br>
+                <label for="email">
+                    Email :
+                </label> <br>
+                <input name="email" type="email" id="email" required> <br>
+                <label for="information">
+                    How can I help you ? <br>
+                </label>
+                <textarea name="information" id="information" cols="30" rows="10" required></textarea>
+                <input class="send" type="submit" value="Send">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="me">
+            <img src="assets/images/logo_white.png" alt="Abene Sebei" />
+            <h1>Abene Sebei</h1>
+        </div>
+        <div class="sociallinks">
+            <ul>
+                <li><a href="https://www.instagram.com/abenesebeii/" target="_blank"><img src="assets/images/icons/instagram.png" height="30px" width="30px" alt="Instagram">@abenesebeii</a></li>
+                <li><a href="https://www.facebook.com/abene.sebei.39/" target="_blank" ><img src="assets/images/icons/facebook.png" height="30px" width="30px" alt="Facebook">Abene Sebei</a></li>
+                <li><a href="https://github.com/abeneTN" target="_blank"><img src="assets/images/icons/github.png" height="30px" width="30px" alt="GitHub">abeneTN</a></li>
+                <li><a href="https://github.com/abeneTN" target="_blank"><img src="assets/images/icons/behance.png" height="30px" width="30px" alt="BeHance">Abene Sebei</a></li>
+            </ul>
+        </div>
+        <p>Designed and coded by Abene Sebei <3</p>
+    </footer>
+</body>
+</html>
